@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rishabh | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <h1>Rishabh</h1>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO -->
+    <header class="fade-in">
+        <h2>Hello, I'm Rishabh</h2>
+        <p>Aspiring Full Stack Developer & Digital Marketing Enthusiast</p>
+    </header>
+
+    <!-- ABOUT -->
+    <section id="about" class="fade-in">
+        <h2>About Me</h2>
+        <p>
+            I’m an aspiring tech enthusiast and BCA undergraduate with a strong interest in building digital solutions that solve real-world problems. With a foundation in Java, Python, and C++, I’m continuously expanding my skills in software development, web technologies, and cybersecurity, focusing on creating reliable, efficient, and user-centric applications.
+
+
+
+Alongside my technical journey, I’m deeply interested in digital marketing and how technology drives online growth. I enjoy exploring SEO, content strategy, analytics, and user behavior to understand how digital products reach and engage the right audience. This blend of development and marketing allows me to create websites and platforms that are not only functional and visually appealing but also optimized for performance, visibility, and impact.
+        </p>
+    </section>
+
+    <!-- SKILLS + CERTIFICATIONS -->
+    <section id="skills" class="fade-in">
+        <h2>Skills & Certifications</h2>
+
+        <div class="skills-container">
+            <div>
+                <h3>Skills</h3>
+                <ul>
+                    <li>HTML & CSS</li>
+                    <li>Python Basics</li>
+                    <li>Web Development Fundamentals</li>
+                    <li>Data Analysis Basics</li>
+                    <li>Digital Marketing</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Certifications</h3>
+                <ul>
+                    <li>Web Development (Self Learning)</li>
+                    <li>Data Analyst - Forage</li>
+                    <li>Meta - Digital Marketing</li>
+                    <li>HTML & CSS - Codex</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="fade-in">
+        <h2>Projects</h2>
+        <p>No projects yet. Coming soon...</p>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="fade-in">
+        <h2>Contact Me</h2>
+        <p>Email: rishabhnair054@gmail.com</p>
+        <p>Phone: +91 9108017013</p>
+
+        <div class="socials">
+         <a href="https://github.com/rishiRnair-github" target="_blank">GitHub</a>
+         <a href="https://www.linkedin.com/in/rishabh-r-b3208a2bb/" target="_blank">LinkedIn</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Rishabh. All rights reserved.</p>
+    </footer>
+
+<script>
+    const elements = document.querySelectorAll('.fade-in');
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if(entry.isIntersecting){
+                entry.target.classList.add('show');
+            }
+        });
+    });
+
+    elements.forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
